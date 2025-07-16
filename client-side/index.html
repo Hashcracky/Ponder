@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponder</title>
+    <link rel="stylesheet" href="/static/css/ponder.css">
+    <link rel="icon" href="/static/img/orb.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                P
+                <img src="/static/img/orb.png" alt="orb" class="orb">
+                nder
+            </h1>
+            <h2 class="subheading">A magical wordlist generation experience.</h2>
+        </header>
+        <hr class="theme-hr">
+
+        <section id="welcome-section">
+            <h2>Welcome to Ponder</h2>
+            <p>Ponder is a web application designed to help you generate wordlists.</p>
+            <h3>Usage:</h3>
+            <ul>
+                <li>
+                    Import a wordlist from the server's <code>/import</code> directory or upload a file.
+                </li>
+                <li>
+                    Monitor the logs and await the new wordlist.
+                </li>
+                <li>
+                    Download a generated wordlist based on the uploaded file.
+                </li>
+            </ul>
+        </section>
+
+        <section id="log-events">
+            <h2>Latest Log Events</h2>
+            <div id="log-entries"></div>
+        </section>
+
+        <section id="import-section">
+            <h2>Import Wordlist</h2>
+            <p>
+                Import <code>*.txt</code> files from the <code>/import</code> directory on the server.
+                The file should contain one item per line.
+            </p>
+            <form id="import-form">
+                <button type="submit" id="import-button">Import</button>
+                <p id="import-status"></p>
+            </form>
+        </section>
+
+        <section id="upload-section">
+            <h2>Upload File</h2>
+            <p>
+                Upload a file to generate a wordlist. The file should contain one item per line.
+            </p>
+            <form id="upload-form">
+                <input type="file" id="file-upload" aria-label="Upload wordlist file">
+                <button type="submit" id="upload-button">Upload</button>
+                <p id="upload-status"></p>
+            </form>
+        </section>
+
+        <section id="download-section">
+            <h2>Download Wordlist</h2>
+            <p>
+                Download a generated wordlist based on the uploaded file. The top number of lines will be displayed or downloaded. Include an optional substring to use for filtering.
+            </p>
+            <form id="download-form">
+                <input type="number" id="num-lines" placeholder="Number of lines" aria-label="Number of lines">
+                <input type="text" id="substring" placeholder="Substring (optional)" aria-label="Substring for filtering (optional)">
+                <button type="button" id="display-button">Display Line Count</button>
+                <button type="submit" id="download-button">Download Line Count</button>
+                <p id="download-status"></p>
+            </form>
+            <pre id="file-content"></pre>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://github.com/Jabbercracky/Ponder" target="_blank" rel="noopener">GitHub</a>
+        </p>
+    </footer>
+    <script src="/static/js/index.js"></script>
+</body>
+</html>
+

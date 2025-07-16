@@ -1,0 +1,5 @@
+{
+  "source_directory": "/data",
+  "source_wordlist": "/data/source-wordlist.txt",
+  "wizard_wordlist": "/data/wizard-wordlist.txt"
+}
