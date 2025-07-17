@@ -54,7 +54,7 @@ a new wordlist. Multiple uploads are aggregated together, and the original forma
 saved to preserve future generation cycles. The final sort order is *loosely* frequency
 based.
 
-> WARNING: The tool does not currently exhaustively look for duplicates and relys on the operating user.
+> WARNING: The tool does not currently exhaustively look for duplicates and relies on the operating user.
 
 ## Ponder Homepage
 <div align="center">
