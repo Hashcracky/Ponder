@@ -9,7 +9,7 @@ memory availability.
 ## Installation
 Clone the repository then enter the directory.
 ```bash
-git clone github.com/jabbercracky/ponder . && cd ponder
+git clone github.com/hashcracky/ponder . && cd ponder
 ```
 
 The tool is designed to be used in Docker. To build the image, run the
